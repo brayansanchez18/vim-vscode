@@ -17,7 +17,7 @@ const parejas = numeros.map(x => [x, x])
 
 const mascotas = [
   { nombre: 'Pelusa', edad: 12, tipo: 'gato' },
-  { nombre: 'Puchini', edad: 12, tipo: 'perro' },
+  { nombre: 'name', edad: 12, tipo: 'perro' },
   { nombre: 'Chanchito feliz', edad: 3, tipo: 'perro' },
   { nombre: 'Pulga', edad: 10, tipo: 'perro' },
 ]
@@ -25,3 +25,11 @@ const mascotas = [
 const edades = mascotas.map(x => x.edad)
 const resultado = suma(edades)
 console.log(resultado / edades.length);
+
+// primer reemplazo
+// segundo comentario
+// tercer comentario
+
+// primer commit
+// segundo commit
+// gercer commit

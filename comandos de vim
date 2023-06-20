@@ -1,0 +1,105 @@
+comando de cambio
+c + w = chage word, elimina la palabra y te pone inmediatamente en el modo insert para que escribas
+c+i+w = elimina la palabra inmediatamente de donde tengamos posicionado el cursor y te pone en el modo de inser
+
+SALTOS DE LINEA Y BUSQUEDA
+
+g+g = te lleva al inicio del documento
+shift+g = te lleva al final del documento
+numero de linea + shift + g = te lleva a la liena de codigo espesificada
+
+debemos estar en modo normal
+
+/+palabra a buscar = preiconando enter y te busca todas las coinsidencias que hay de esa palabr desde donde esta posicionado el cursor
+
+?+palabra a buscar = lo mismo que el comando anterior pero este te busca todas las coinsidencias hacia atras de donde estaba el cursor
+
+en ambos casos se utiliza "shift+n" para retroceder de opcion
+
+SALTANDO AL PARENTESIS CORRESPONDIENTE Y REEMPLAZO DE CADENAS
+
+shift+5 o % = te lleva al caracter CORRESPONDIENTE que abre y cierra elemplo () {}[] 
+
+ejemplo si queremos borrar lo que esta dentro de las llaves podemos hacer la convinacion de taclas: v+%+c y lo eliminamos
+
+const suma = ns => {
+  let acumulado = 0;
+  for (i = 0; i < ns.length; i++) {
+    acumulado += ns[i];
+  }
+  ayuda();
+  return acumulado;
+}
+
+precionamos %+c
+
+const suma = ns => 
+
+PARA MOVERNOS AL COMIENZO DE LA LINEA
+0 = te lleva al inicio de la linea inmediatamente de donde tengamos el cursor
+
+$ = hace lo mismo que el comando anterior solo que este nos lleva al final de la linea
+
+COMANDO DE REEMPLAZAR
+
+debemos estar en el modo normal
+r = palabra que queremos REEMPLAZAR
+s = palabra de REEMPLAZO
+g = para reemplazar todas las coincidencias que encuentre en el documento
+:s/r/s/g
+
+solo se reemplazan las palabras que coinsidan donde tenemos posicionado el cursor
+ABRIR LINEA, REEMPLAZAR, COPIAR Y PEGAR
+
+o = abrir una lina debajo del cursor
+shit + o = abrir una linea arriba del cursor
+
+para seleccionar una lina completa, nos posicionamos al inicio de la linea que queremos copiar y lo hacemos con 
+
+shift+v
+
+si queremos copiar mas de una linea nos ponermos en modo visual y nos movemos con los comandos de movimiento hjkl w e b etc
+
+con "+y podemos copiar el texto en el protapapeles del computador
+
+para seleccionar todo el documento lo podemos hacerlo poniendonos al inico del documento 
+
+shift+v despues shift+g o G y selecciona todo el documento
+
+PARA REEMPLAZAR UNA palabra
+
+suponiendo que tenemos un caracter
+
+hygeris y la queremos reemplazar por numero
+
+hacemos lo siguiente
+
+hygeris
+
+* shift+r o R // modo reemplazar
+
+numeros
+
+PARA COPIAR Y PEGAR
+
+para poder entrar al modo visual hacemos lo siguiente
+
+v = modo visual
+
+{ = no podemos mover hacia arriba en los parrafos
+
+} = nos podemos mover hacia abajo entre parrafos
+
+crtl+d = para hacer scroll hacia abajo
+ctrl+u = para hacer scroll hacia arriba
+
+para movernos en el explorador de archivos lo podemos hacer con las siguientes teclas
+
+ctrl+0 en el modo normal
+y abrimos el explorador de archivos
+
+si volvemos a hacer la convinacion de teclas va a hacerse un focus en los archivos y podemos seleccionarlos con las teclas de movimiento hjkl
+
+con el comando
+:qa = podemos cerra todas las pestanas abiertas
+:qw = podemos guardar y cerrar el archivo donde nos encontremos
